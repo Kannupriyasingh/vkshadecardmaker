@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post 1</title>
+    <link rel="stylesheet" href="css/blog-post.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- Add header content if needed -->
+    </header>
+
+    <main>
+        <article>
+            <h1>Wool Shade Card For MojoPand (DELHI)</h1>
+            <p>Date: March 25, 2024</p>
+            <div class="article-content">
+                <div class="gallery swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/bg-image1.jpeg" alt="Wool Shade Card"></div>
+                        <div class="swiper-slide"><img src="images/bg-image5.jpeg" alt="Alternate Image"></div>
+                        <div class="swiper-slide"><img src="images/bg-image1.jpeg" alt="Alternate Image"></div>
+                        <!-- Add more images here -->
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <p>Behold the culmination of our craftsmanship in the Wool Shade Card exclusively crafted for MojoPand in Delhi. Delve into our gallery of mesmerizing wool shades meticulously curated to meet MojoPand's discerning standards. Witness the fusion of artistry and functionality in each shade, meticulously designed to inspire and empower your creative pursuits.</p>
+                <!-- Add more content here if needed -->
+            </div>
+        </article>
+        <article>
+            <h1>Cotton Shade Card (GUJRAT)</h1>
+            <p>Date: Oct 11, 2023</p>
+            <div class="article-content">
+                <!-- <img src="images/section2-images/cotton-shade-card.jpeg" alt="Cotton Shade Card" class="blog-post-image"> -->
+                <div class="gallery swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/bg-image1.jpeg" alt="Wool Shade Card"></div>
+                        <div class="swiper-slide"><img src="images/bg-image2.jpeg" alt="Alternate Image"></div>
+                        <div class="swiper-slide"><img src="images/bg-image4.jpeg" alt="Alternate Image"></div>
+                        <!-- Add more images here -->
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <p>Immerse yourself in our collaborative journey with Gujarat's textile industry through the Cotton Shade Card. Capturing the essence of our dedication, each shade reflects our commitment to excellence. Explore the visual feast of cotton hues meticulously tailored to complement Gujarat's rich cultural tapestry. Our work speaks volumes, inviting you to experience the harmony of tradition and innovation.</p>
+                <!-- Add more content here if needed -->
+            </div>
+        </article>
+        <article>
+            <h1>Cotton Shade Card (MUMBAI)</h1>
+            <p>Date: May 16, 2023</p>
+            <div class="article-content">
+                <!-- <img src="images/bg2.png" alt="Cotton Shade Card" class="blog-post-image"> -->
+                <div class="gallery swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/bg-image1.jpeg" alt="Wool Shade Card"></div>
+                        <div class="swiper-slide"><img src="images/bg-image2.jpeg" alt="Alternate Image"></div>
+                        <div class="swiper-slide"><img src="images/bg-image3.jpeg" alt="Alternate Image"></div>
+                        <!-- Add more images here -->
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <p>Step into the vibrant world of Mumbai's textile scene with our Cotton Shade Card, a testament to our passion for precision and creativity. Witness our expertise come to life in every thread, showcasing the breadth of Mumbai's textile preferences. From concept to creation, our collaboration with Mumbai reflects our dedication to delivering quality and style. Explore the gallery and immerse yourself in the beauty of our work.</p>
+                <!-- Add more content here if needed -->
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <!-- Add footer content if needed -->
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var galleries = document.querySelectorAll('.gallery');
+            galleries.forEach(function (gallery) {
+                var swiper = new Swiper(gallery, {
+                    loop: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
