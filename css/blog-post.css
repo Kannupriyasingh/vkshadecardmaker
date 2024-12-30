@@ -1,4 +1,5 @@
 /* Reset default margin and padding */
+
 * {
     margin: 0;
     padding: 0;
@@ -165,4 +166,219 @@ p {
 .demoImg {
     width: 20vh;
     height: 10vh;
+}
+
+
+
+
+
+
+
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* General Styles */
+header,
+footer {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+article {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 600px;
+    width: 90%; /* Adjust for smaller screens */
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.blog-post-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Swiper */
+.swiper-container {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Slideshow and Image Gallery */
+.container {
+    position: relative;
+    width: 100%; /* Ensure the container is responsive */
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 0;
+    padding: 5px;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 5px 10px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 25%; /* Make columns larger for smaller screens */
+    padding: 5px;
+}
+
+.demo {
+    opacity: 0.6;
+    width: 100%;
+    height: auto;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.wideImg,
+.demoImg {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .prev, .next {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .column {
+        width: 33.33%;
+    }
+}
+
+@media (max-width: 768px) {
+    header, footer {
+        padding: 0.5rem;
+    }
+
+    article {
+        padding: 15px;
+    }
+
+    .column {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .prev, .next {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header, footer {
+        font-size: 0.9rem;
+    }
+
+    article {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    .prev, .next {
+        font-size: 0.7rem;
+    }
 }
